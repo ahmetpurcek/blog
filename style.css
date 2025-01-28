@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    background-color: rgb(152, 152, 152);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(152, 152, 152);
+    border-radius: 3px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.form-group .labels {
+    flex: 1;
+    text-align: right;
+}
+
+.form-group .inputs {
+    flex: 2;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.submit-btn {
+    background-color: rgb(152, 152, 152);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    align-self: flex-end;
+}
+
+.submit-btn:hover {
+    opacity: 0.7;
+}
+
+.post {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
+
+.meta {
+    color: rgb(102, 102, 102);
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.post-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+.edit-btn, .delete-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.edit-btn {
+    background-color: rgb(76, 175, 80);
+}
+
+.delete-btn {
+    background-color: rgb(244, 67, 54);
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.9;
+}
+
+.post-form {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.post-form .form-group {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.post-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.post-form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.post-form button {
+    background-color: rgb(76, 175, 80);
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+    transition: background-color 0.3s;
+}
+
+.post-form button:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+.post-form div {
+    margin-bottom: 20px;
+}
+
+.post-form .form-group + .form-group {
+    margin-top: 25px;
+}
+
+.post-form textarea:focus,
+.post-form input[type="text"]:focus {
+    outline: none;
+    border-color: rgb(76, 175, 80);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.post-form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.error {
+    background-color: rgb(255, 235, 238);
+    color: rgb(198, 40, 40);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.error-message {
+    background-color: rgb(255, 235, 238);
+    color: rgb(198, 40, 40);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* New post sayfasındaki main elementi için özel stil */
+.new-post-main {
+    display: block !important;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
