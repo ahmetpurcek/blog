@@ -1,5 +1,4 @@
 <?php
-// session_start(); satırını kaldırın veya yoruma alın
 $host = 'localhost';
 $dbname = 'blog';
 $username = 'root';
